@@ -1,0 +1,1426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{C2FFEB61-8CDF-2C40-4FBB-0C823ACAD0C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>teasteep.utilities.Runtime</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\</OutputPath>
+    <DefineConstants>UNITY_2021_3_8;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;FISHNET;FISHNET_V3;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.16</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2021.3.8f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="D:\Documents\Unity\Nebula Lancing\Assets\FishNet\Plugins\CodeAnalysis\FishNet.CodeAnalysis.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Core\Interfaces\IElementValue.cs">
+      <Link>Runtime\Element\Core\Interfaces\IElementValue.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\IBehaviour.cs">
+      <Link>Runtime\Core\IBehaviour.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Controls\AwakeControl.cs">
+      <Link>Runtime\Element\Elements\Controls\AwakeControl.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\StringVariableElement.cs">
+      <Link>Runtime\Element\Elements\Variables\StringVariableElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Interfaces\Instance\ITeaState.cs">
+      <Link>Runtime\Core\State\Interfaces\Instance\ITeaState.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Variable\ColorVariable.cs">
+      <Link>Runtime\Core\Variable\ColorVariable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Logic\IfElement.cs">
+      <Link>Runtime\Element\Elements\Logic\IfElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\InputControl\KeyCommand.cs">
+      <Link>Runtime\Core\InputControl\KeyCommand.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Variable\Vector2Variable.cs">
+      <Link>Runtime\Core\Variable\Vector2Variable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Blackboard\BlackboardTypes.cs">
+      <Link>Runtime\Core\Blackboard\BlackboardTypes.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\Math\SubtractElement.cs">
+      <Link>Runtime\Element\Elements\Variables\Math\SubtractElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\Math\AddIntElement.cs">
+      <Link>Runtime\Element\Elements\Variables\Math\AddIntElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Threshold\Threshold.cs">
+      <Link>Runtime\Core\Threshold\Threshold.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Ability\Basics\SimpleActorObject.cs">
+      <Link>Runtime\Ability\Basics\SimpleActorObject.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Gravity\Behaviours\ForeignGravityBody.cs">
+      <Link>Runtime\Character\Controller\Modules\Gravity\Behaviours\ForeignGravityBody.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Blackboard\BlackboardTable.cs">
+      <Link>Runtime\Core\Blackboard\BlackboardTable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Extensions\GameObjectExtension.cs">
+      <Link>Runtime\Core\Extensions\GameObjectExtension.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Variable\ObjectVariable.cs">
+      <Link>Runtime\Core\Variable\ObjectVariable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Controls\Utility\Instantiate.cs">
+      <Link>Runtime\Modular\Controls\Utility\Instantiate.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Controls\Utility\PrimativeMesh.cs">
+      <Link>Runtime\Modular\Controls\Utility\PrimativeMesh.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Ability\ContextInstance.cs">
+      <Link>Runtime\Ability\ContextInstance.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\SetValue\Vector2SetValueElement.cs">
+      <Link>Runtime\Element\Elements\Variables\SetValue\Vector2SetValueElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Variable\BoolVariable.cs">
+      <Link>Runtime\Core\Variable\BoolVariable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Ground.cs">
+      <Link>Runtime\Character\Controller\Ground.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Builders\UpdateBuilder.cs">
+      <Link>Runtime\Modular\Builders\UpdateBuilder.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Extensions\Vector3Extension.cs">
+      <Link>Runtime\Core\Extensions\Vector3Extension.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Interfaces\IActionObject.cs">
+      <Link>Runtime\Modular\Interfaces\IActionObject.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Operations\LeafOperation.cs">
+      <Link>Runtime\Core\State\Operations\LeafOperation.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Camera\Controllers\FixedCameraController.cs">
+      <Link>Runtime\Core\Camera\Controllers\FixedCameraController.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Ability\ActionStep\StepHierarchy.cs">
+      <Link>Runtime\Ability\ActionStep\StepHierarchy.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Interfaces\StateContents\IUpdateContent.cs">
+      <Link>Runtime\Core\State\Interfaces\StateContents\IUpdateContent.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Camera\CameraControl_Static.cs">
+      <Link>Runtime\Core\Camera\CameraControl_Static.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\SetValue\ColorSetValueElement.cs">
+      <Link>Runtime\Element\Elements\Variables\SetValue\ColorSetValueElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Controls\Translation\DirectionalMove.cs">
+      <Link>Runtime\Modular\Controls\Translation\DirectionalMove.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Context\IVariableRepository.cs">
+      <Link>Runtime\Core\Context\IVariableRepository.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Gravity\Systems\DirectionGravity.cs">
+      <Link>Runtime\Character\Controller\Modules\Gravity\Systems\DirectionGravity.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\StatusManager\IStatus.cs">
+      <Link>Runtime\Character\Status\StatusManager\IStatus.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Extensions\Vector2IntExtension.cs">
+      <Link>Runtime\Core\Extensions\Vector2IntExtension.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Extensions\RectExtension.cs">
+      <Link>Runtime\Core\Extensions\RectExtension.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Variable\FloatVariable.cs">
+      <Link>Runtime\Core\Variable\FloatVariable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\ActorController.cs">
+      <Link>Runtime\Character\Controller\ActorController.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\WedgeCone\Wedge.cs">
+      <Link>Runtime\Core\WedgeCone\Wedge.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\SetValue\FloatSetValueElement.cs">
+      <Link>Runtime\Element\Elements\Variables\SetValue\FloatSetValueElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Trajectory\Trajectory.cs">
+      <Link>Runtime\Core\Trajectory\Trajectory.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Gravity\Systems\OriginGravitySystem.cs">
+      <Link>Runtime\Character\Controller\Modules\Gravity\Systems\OriginGravitySystem.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Interfaces\IModCondition.cs">
+      <Link>Runtime\Modular\Interfaces\IModCondition.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\ActorFixedController.cs">
+      <Link>Runtime\Character\Controller\ActorFixedController.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Variable\DateTimeVariable.cs">
+      <Link>Runtime\Core\Variable\DateTimeVariable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\TeaMath\InverseFormula.cs">
+      <Link>Runtime\Core\TeaMath\InverseFormula.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Core\ControlBase.cs">
+      <Link>Runtime\Element\Core\ControlBase.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\SetValue\QuaternionSetValueElement.cs">
+      <Link>Runtime\Element\Elements\Variables\SetValue\QuaternionSetValueElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Core\Interfaces\IElementControl.cs">
+      <Link>Runtime\Element\Core\Interfaces\IElementControl.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Catelog\IPrefab.cs">
+      <Link>Runtime\Core\Catelog\IPrefab.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Operations\DefineOperation.cs">
+      <Link>Runtime\Core\State\Operations\DefineOperation.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Controls\Collection\CompositeAction.cs">
+      <Link>Runtime\Modular\Controls\Collection\CompositeAction.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Collections\Nodes\Node2.cs">
+      <Link>Runtime\Collections\Nodes\Node2.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\ResourceLoader\ResourceLoader.cs">
+      <Link>Runtime\ResourceLoader\ResourceLoader.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Variable\QuaternionVariable.cs">
+      <Link>Runtime\Core\Variable\QuaternionVariable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Interfaces\BranchContents\IFailsafeBranch.cs">
+      <Link>Runtime\Core\State\Interfaces\BranchContents\IFailsafeBranch.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Logic\Compare\EqualsElement.cs">
+      <Link>Runtime\Element\Elements\Logic\Compare\EqualsElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\ActorLateController.cs">
+      <Link>Runtime\Character\Controller\ActorLateController.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Interfaces\IModControl.cs">
+      <Link>Runtime\Modular\Interfaces\IModControl.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\GroundSnap.cs">
+      <Link>Runtime\Character\Controller\GroundSnap.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Extensions\TransformExtension.cs">
+      <Link>Runtime\Core\Extensions\TransformExtension.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Variable\Vector3Variable.cs">
+      <Link>Runtime\Core\Variable\Vector3Variable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\BezierCurve\BezierCurve.cs">
+      <Link>Runtime\Core\BezierCurve\BezierCurve.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\ModuleBehaviour.cs">
+      <Link>Runtime\Modular\ModuleBehaviour.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Transforms\PointTransform.cs">
+      <Link>Runtime\Core\Transforms\PointTransform.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Gravity\GravitySettings.cs">
+      <Link>Runtime\Character\Controller\Modules\Gravity\GravitySettings.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Blackboard\Blackboard.cs">
+      <Link>Runtime\Element\Blackboard\Blackboard.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Core\ConditionElement.cs">
+      <Link>Runtime\Element\Core\ConditionElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\RegistrySlot\RegistrySlot.cs">
+      <Link>Runtime\Core\RegistrySlot\RegistrySlot.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\CompositeAction.cs">
+      <Link>Runtime\Modular\CompositeAction.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Debug\LogElement.cs">
+      <Link>Runtime\Element\Elements\Debug\LogElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Interfaces\StateContents\IDefineContent.cs">
+      <Link>Runtime\Core\State\Interfaces\StateContents\IDefineContent.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Core\Interfaces\IElementAction.cs">
+      <Link>Runtime\Element\Core\Interfaces\IElementAction.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Interfaces\IModAction.cs">
+      <Link>Runtime\Modular\Interfaces\IModAction.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\VV3\RecordingVariable.cs">
+      <Link>Runtime\Core\VV3\RecordingVariable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\PositionGrid\GridCoordinator\GridCoordinator.cs">
+      <Link>Runtime\Core\PositionGrid\GridCoordinator\GridCoordinator.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\WedgeCone\Cone.cs">
+      <Link>Runtime\Core\WedgeCone\Cone.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Gravity\Systems\GravitySystem.cs">
+      <Link>Runtime\Character\Controller\Modules\Gravity\Systems\GravitySystem.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Camera\ICameraController.cs">
+      <Link>Runtime\Core\Camera\ICameraController.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Tween\ArcTween.cs">
+      <Link>Runtime\Core\Tween\ArcTween.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Core\ActionElement.cs">
+      <Link>Runtime\Element\Core\ActionElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Extensions\IEnumerableExtension.cs">
+      <Link>Runtime\Core\Extensions\IEnumerableExtension.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Instances\TeaState.cs">
+      <Link>Runtime\Core\State\Instances\TeaState.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\VariableRepository\VariableRepository.cs">
+      <Link>Runtime\Core\VariableRepository\VariableRepository.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\OnChange\OnChangedCallAttribute.cs">
+      <Link>Runtime\Core\OnChange\OnChangedCallAttribute.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\SetValue\DateTimeSetValueElement.cs">
+      <Link>Runtime\Element\Elements\Variables\SetValue\DateTimeSetValueElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Gravity\Behaviours\TwoSidedGravityBody.cs">
+      <Link>Runtime\Character\Controller\Modules\Gravity\Behaviours\TwoSidedGravityBody.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\SetValue\RectSetValueElement.cs">
+      <Link>Runtime\Element\Elements\Variables\SetValue\RectSetValueElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\Effect\EffectManager\EffectInstance.cs">
+      <Link>Runtime\Character\Status\Effect\EffectManager\EffectInstance.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\InputControl\Keys.cs">
+      <Link>Runtime\Core\InputControl\Keys.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Blackboard\HashHelper.cs">
+      <Link>Runtime\Core\Blackboard\HashHelper.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Ability\Basics\CastingStep.cs">
+      <Link>Runtime\Ability\Basics\CastingStep.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\VV3\PersistentVariable.cs">
+      <Link>Runtime\Core\VV3\PersistentVariable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Context\IVariableContext.cs">
+      <Link>Runtime\Core\Context\IVariableContext.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Collections\VariableDictionary.cs">
+      <Link>Runtime\Collections\VariableDictionary.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\VV3\VariableRecorder.cs">
+      <Link>Runtime\Core\VV3\VariableRecorder.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Extensions\ConcurrentExtension.cs">
+      <Link>Runtime\Core\Extensions\ConcurrentExtension.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Operations\TransitionOperation.cs">
+      <Link>Runtime\Core\State\Operations\TransitionOperation.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\HitScanner\HitScanner.cs">
+      <Link>Runtime\Core\HitScanner\HitScanner.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\Effect\ActionEffect.cs">
+      <Link>Runtime\Character\Status\Effect\ActionEffect.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\SetValue\Vector3SetValueElement.cs">
+      <Link>Runtime\Element\Elements\Variables\SetValue\Vector3SetValueElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\InputControl\KeyMap.cs">
+      <Link>Runtime\Core\InputControl\KeyMap.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Operations\PanicOperation.cs">
+      <Link>Runtime\Core\State\Operations\PanicOperation.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Camera\TrackingInfo.cs">
+      <Link>Runtime\Core\Camera\TrackingInfo.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Retrieve\Retrieve.cs">
+      <Link>Runtime\Core\Retrieve\Retrieve.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\GetValue\IntBlackboardElement.cs">
+      <Link>Runtime\Element\Elements\Variables\GetValue\IntBlackboardElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Readonly\ReadOnlyDrawer.cs">
+      <Link>Runtime\Core\Readonly\ReadOnlyDrawer.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Threshold\Thresrange.cs">
+      <Link>Runtime\Core\Threshold\Thresrange.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\StatusManager\StatusManager.cs">
+      <Link>Runtime\Character\Status\StatusManager\StatusManager.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Gravity\Behaviours\NormalGravitySystem.cs">
+      <Link>Runtime\Character\Controller\Modules\Gravity\Behaviours\NormalGravitySystem.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\SetValue\ObjectSetValueElement.cs">
+      <Link>Runtime\Element\Elements\Variables\SetValue\ObjectSetValueElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Controls\Logic\DistanceCondition.cs">
+      <Link>Runtime\Modular\Controls\Logic\DistanceCondition.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Blackboard\KeyName\KeyManager.cs">
+      <Link>Runtime\Core\Blackboard\KeyName\KeyManager.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Interfaces\BranchContents\IBranchContent.cs">
+      <Link>Runtime\Core\State\Interfaces\BranchContents\IBranchContent.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\FootingStates.cs">
+      <Link>Runtime\Character\Controller\FootingStates.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Core\ValueElement.cs">
+      <Link>Runtime\Element\Core\ValueElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Interfaces\BranchContents\IAfterBranchUpdateContent.cs">
+      <Link>Runtime\Core\State\Interfaces\BranchContents\IAfterBranchUpdateContent.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Tween\ITween.cs">
+      <Link>Runtime\Core\Tween\ITween.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Tween\Traveller\Travellers\TweenTraveller.cs">
+      <Link>Runtime\Core\Tween\Traveller\Travellers\TweenTraveller.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\RangeFloat\RangeFloat.cs">
+      <Link>Runtime\Core\RangeFloat\RangeFloat.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Instances\BranchInstance.cs">
+      <Link>Runtime\Core\State\Instances\BranchInstance.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\StatusManager\Terms\ITermKey.cs">
+      <Link>Runtime\Character\Status\StatusManager\Terms\ITermKey.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Interfaces\IModule.cs">
+      <Link>Runtime\Modular\Interfaces\IModule.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\VariableRepository\Unity\RepositoryBehaviour.cs">
+      <Link>Runtime\Core\VariableRepository\Unity\RepositoryBehaviour.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\ControllerSettings.cs">
+      <Link>Runtime\Character\Controller\ControllerSettings.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Builders\ModuleBuilder.cs">
+      <Link>Runtime\Modular\Builders\ModuleBuilder.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\StatusManager\Terms\IEffectTerms.cs">
+      <Link>Runtime\Character\Status\StatusManager\Terms\IEffectTerms.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Interaction\MoveBy.cs">
+      <Link>Runtime\Element\Elements\Interaction\MoveBy.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Builders\ModularBuilder.cs">
+      <Link>Runtime\Modular\Builders\ModularBuilder.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Catelog\PrefabToken.cs">
+      <Link>Runtime\Core\Catelog\PrefabToken.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Instances\StateInstance.cs">
+      <Link>Runtime\Core\State\Instances\StateInstance.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\Effect\IEffect.cs">
+      <Link>Runtime\Character\Status\Effect\IEffect.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Instances\BranchMachine\BranchMachine.cs">
+      <Link>Runtime\Core\State\Instances\BranchMachine\BranchMachine.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Adapters\ScriptAdapter.cs">
+      <Link>Runtime\Element\Elements\Adapters\ScriptAdapter.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Gravity\Systems\TwoSidedGravitySystem.cs">
+      <Link>Runtime\Character\Controller\Modules\Gravity\Systems\TwoSidedGravitySystem.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Ability\IAbilityContext.cs">
+      <Link>Runtime\Ability\IAbilityContext.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Drag\DragSettings.cs">
+      <Link>Runtime\Character\Controller\Modules\Drag\DragSettings.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\HitScanner\Scannable.cs">
+      <Link>Runtime\Core\HitScanner\Scannable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Interfaces\StateContents\IStartContent.cs">
+      <Link>Runtime\Core\State\Interfaces\StateContents\IStartContent.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\PositionGrid\PositionGrid.cs">
+      <Link>Runtime\Core\PositionGrid\PositionGrid.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Tween\Traveller\Traveller.cs">
+      <Link>Runtime\Core\Tween\Traveller\Traveller.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\BodyController.cs">
+      <Link>Runtime\Character\Controller\BodyController.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Interfaces\Instance\IStateInstance.cs">
+      <Link>Runtime\Core\State\Interfaces\Instance\IStateInstance.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Ability\IActionObject.cs">
+      <Link>Runtime\Ability\IActionObject.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\StatusManager\Terms\EffectTermKey.cs">
+      <Link>Runtime\Character\Status\StatusManager\Terms\EffectTermKey.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Gravity\GlobalGravity.cs">
+      <Link>Runtime\Character\Controller\Modules\Gravity\GlobalGravity.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\FlagAttribute\EnumFlagsAttribute.cs">
+      <Link>Runtime\Core\FlagAttribute\EnumFlagsAttribute.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Gravity\GravityModel.cs">
+      <Link>Runtime\Character\Controller\Modules\Gravity\GravityModel.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Tween\TweenPoint.cs">
+      <Link>Runtime\Core\Tween\TweenPoint.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Variable\Fetch\Fetch.cs">
+      <Link>Runtime\Core\Variable\Fetch\Fetch.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\ModularObject.cs">
+      <Link>Runtime\Modular\ModularObject.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Extensions\EnumExtension.cs">
+      <Link>Runtime\Core\Extensions\EnumExtension.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Modules\OnHitModule.cs">
+      <Link>Runtime\Modular\Modules\OnHitModule.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Camera\Controllers\ThirdPersonController.cs">
+      <Link>Runtime\Core\Camera\Controllers\ThirdPersonController.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\Effect\EffectResolver.cs">
+      <Link>Runtime\Character\Status\Effect\EffectResolver.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Modules\Builders\OnInitializeBuilder.cs">
+      <Link>Runtime\Modular\Modules\Builders\OnInitializeBuilder.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Variable\Variable.cs">
+      <Link>Runtime\Core\Variable\Variable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Variable\IntVariable.cs">
+      <Link>Runtime\Core\Variable\IntVariable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Collision\CollisionSettings.cs">
+      <Link>Runtime\Character\Controller\Modules\Collision\CollisionSettings.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\Effect\EffectManager\EffectManager.cs">
+      <Link>Runtime\Character\Status\Effect\EffectManager\EffectManager.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Ability\ActionInstance.cs">
+      <Link>Runtime\Ability\ActionInstance.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Interfaces\StateContents\ITeaContent.cs">
+      <Link>Runtime\Core\State\Interfaces\StateContents\ITeaContent.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\PolarConversion\PolarConversion.cs">
+      <Link>Runtime\Core\PolarConversion\PolarConversion.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\SetValue\IntSetValueElement.cs">
+      <Link>Runtime\Element\Elements\Variables\SetValue\IntSetValueElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\StatusManager\IStatusModifier.cs">
+      <Link>Runtime\Character\Status\StatusManager\IStatusModifier.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Modules\UpdateModule.cs">
+      <Link>Runtime\Modular\Modules\UpdateModule.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Controls\Logic\WhileControl.cs">
+      <Link>Runtime\Modular\Controls\Logic\WhileControl.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Tween\Tween.cs">
+      <Link>Runtime\Core\Tween\Tween.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\Math\AddElement.cs">
+      <Link>Runtime\Element\Elements\Variables\Math\AddElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\SetValue\StringSetValueElement.cs">
+      <Link>Runtime\Element\Elements\Variables\SetValue\StringSetValueElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\HeaderChain\HeaderChain.cs">
+      <Link>Runtime\Core\HeaderChain\HeaderChain.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\SetValue\BoolSetValueElement.cs">
+      <Link>Runtime\Element\Elements\Variables\SetValue\BoolSetValueElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\VV3\DynamicVariable.cs">
+      <Link>Runtime\Core\VV3\DynamicVariable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\InputControl\InputControl.cs">
+      <Link>Runtime\Core\InputControl\InputControl.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Interfaces\IModValue.cs">
+      <Link>Runtime\Modular\Interfaces\IModValue.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Variable\StringVariable.cs">
+      <Link>Runtime\Core\Variable\StringVariable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Ability\Basics\Projectile\SimpleProjectile.cs">
+      <Link>Runtime\Ability\Basics\Projectile\SimpleProjectile.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Transforms\TelemetryTransform.cs">
+      <Link>Runtime\Core\Transforms\TelemetryTransform.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\PositionGrid\PositionGridEditor.cs">
+      <Link>Runtime\Core\PositionGrid\PositionGridEditor.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Catelog\Catelog.cs">
+      <Link>Runtime\Core\Catelog\Catelog.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Blackboard\Blackboard.cs">
+      <Link>Runtime\Core\Blackboard\Blackboard.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Catelog\PrefabSettings.cs">
+      <Link>Runtime\Core\Catelog\PrefabSettings.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\StatusManager\StatusInstance.cs">
+      <Link>Runtime\Character\Status\StatusManager\StatusInstance.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Camera\Target\CameraTarget.cs">
+      <Link>Runtime\Core\Camera\Target\CameraTarget.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Extensions\TypeExtension.cs">
+      <Link>Runtime\Core\Extensions\TypeExtension.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Blackboard\KeyName\KeyName.cs">
+      <Link>Runtime\Core\Blackboard\KeyName\KeyName.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Readonly\ReadOnlyAttribute.cs">
+      <Link>Runtime\Core\Readonly\ReadOnlyAttribute.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Collections\Nodes\Node.cs">
+      <Link>Runtime\Collections\Nodes\Node.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\Effect\ChainBuilder.cs">
+      <Link>Runtime\Character\Status\Effect\ChainBuilder.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Interfaces\StateContents\IEndContent.cs">
+      <Link>Runtime\Core\State\Interfaces\StateContents\IEndContent.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Adapters\InvokeEventElement.cs">
+      <Link>Runtime\Element\Elements\Adapters\InvokeEventElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Camera\Target\TargetSettings.cs">
+      <Link>Runtime\Core\Camera\Target\TargetSettings.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Modules\AwakeModule.cs">
+      <Link>Runtime\Modular\Modules\AwakeModule.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Ability\Basics\Projectile\IProjectileObject.cs">
+      <Link>Runtime\Ability\Basics\Projectile\IProjectileObject.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Operations\BranchOperation.cs">
+      <Link>Runtime\Core\State\Operations\BranchOperation.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Traversal\TraversalSettings.cs">
+      <Link>Runtime\Character\Controller\Modules\Traversal\TraversalSettings.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Extensions\CameraExtension.cs">
+      <Link>Runtime\Core\Extensions\CameraExtension.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Line\Line.cs">
+      <Link>Runtime\Core\Line\Line.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\TransitionMessage.cs">
+      <Link>Runtime\Core\State\TransitionMessage.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Tween\TweenHandler.cs">
+      <Link>Runtime\Core\Tween\TweenHandler.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Interfaces\Instance\IBranchInstance.cs">
+      <Link>Runtime\Core\State\Interfaces\Instance\IBranchInstance.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\State\Interfaces\BranchContents\IBeforeBranchUpdateContent.cs">
+      <Link>Runtime\Core\State\Interfaces\BranchContents\IBeforeBranchUpdateContent.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\StatusManager\ModifierInstance.cs">
+      <Link>Runtime\Character\Status\StatusManager\ModifierInstance.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Variable\RectVariable.cs">
+      <Link>Runtime\Core\Variable\RectVariable.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Camera\CameraControl.cs">
+      <Link>Runtime\Core\Camera\CameraControl.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\TeaMath\Diagnostics\InverseFormulaDiagnostics.cs">
+      <Link>Runtime\Core\TeaMath\Diagnostics\InverseFormulaDiagnostics.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Pool\ObjectPool.cs">
+      <Link>Runtime\Core\Pool\ObjectPool.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Controls\Utility\PrefabStripping.cs">
+      <Link>Runtime\Modular\Controls\Utility\PrefabStripping.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\Effect\SM2.cs">
+      <Link>Runtime\Character\Status\Effect\SM2.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Camera\ActorCameraController.cs">
+      <Link>Runtime\Core\Camera\ActorCameraController.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Controls\UpdateControl.cs">
+      <Link>Runtime\Element\Elements\Controls\UpdateControl.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Ability\AbilityInstance.cs">
+      <Link>Runtime\Ability\AbilityInstance.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Ability\ActionStep\ActionStep.cs">
+      <Link>Runtime\Ability\ActionStep\ActionStep.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Modules\OnInitializeModule.cs">
+      <Link>Runtime\Modular\Modules\OnInitializeModule.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Controls\Logic\IfControl.cs">
+      <Link>Runtime\Modular\Controls\Logic\IfControl.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Elements\Variables\SetVariableElement.cs">
+      <Link>Runtime\Element\Elements\Variables\SetVariableElement.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Core\ActionScript.cs">
+      <Link>Runtime\Element\Core\ActionScript.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Modular\Modules\Builders\OnHitBuilder.cs">
+      <Link>Runtime\Modular\Modules\Builders\OnHitBuilder.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Element\Core\Interfaces\IElementCondition.cs">
+      <Link>Runtime\Element\Core\Interfaces\IElementCondition.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\VariableRepository\Unity\RepositoryObject.cs">
+      <Link>Runtime\Core\VariableRepository\Unity\RepositoryObject.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Context\ISourceContext.cs">
+      <Link>Runtime\Core\Context\ISourceContext.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Status\StatusManager\EffectInfo.cs">
+      <Link>Runtime\Character\Status\StatusManager\EffectInfo.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\VectorCompare.cs">
+      <Link>Runtime\Core\VectorCompare.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\Tween\Traveller\TravelHandler.cs">
+      <Link>Runtime\Core\Tween\Traveller\TravelHandler.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Core\IComponent.cs">
+      <Link>Runtime\Core\IComponent.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Actor.cs">
+      <Link>Runtime\Character\Actor.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Character\Controller\Modules\Gravity\Behaviours\OriginGravityBody.cs">
+      <Link>Runtime\Character\Controller\Modules\Gravity\Behaviours\OriginGravityBody.cs</Link>
+    </Compile>
+    <Compile Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\Ability\IAbility.cs">
+      <Link>Runtime\Ability\IAbility.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Documents\Unity\TeaSteepUtilities\Packages\Tea Steep Utilities\Runtime\teasteep.utilities.Runtime.asmdef">
+      <Link>Runtime\teasteep.utilities.Runtime.asmdef</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DeviceSimulatorModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.DeviceSimulatorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DiagnosticsModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.DiagnosticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.QuickSearchModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.QuickSearchModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreFontEngineModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreTextEngineModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIBuilderModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIBuilderModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportGeneratorMerged">
+      <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+    </Reference>
+    <Reference Include="FishNet.CodeAnalysis">
+      <HintPath>Assets\FishNet\Plugins\CodeAnalysis\FishNet.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.DispatchProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>D:\Documents\Unity\2021.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
